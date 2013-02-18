@@ -10,5 +10,3 @@ export HISTFILESIZE=50000
 calc(){ awk "BEGIN{ print $* }" ;}
 alias gcopen="open -a 'Google Chrome'"
 
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
