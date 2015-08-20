@@ -91,4 +91,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 export GOPATH=$HOME/gocode
 
+alias run-minecraft='java -d64 -jar /Applications/Minecraft.app/Contents/Resources/Java/Bootstrap.jar'
+
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh # This loads NVM
