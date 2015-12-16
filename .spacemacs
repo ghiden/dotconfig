@@ -14,19 +14,20 @@
    '(
      osx
      clojure
-     helm-ag
-     web
+     git
+     html
+     javascript
      ;; --------------------------------------------------------
      ;; Example of useful layers you may want to use right away
      ;; Uncomment a layer name and press C-c C-c to install it
      ;; --------------------------------------------------------
      auto-completion
-     ;; better-defaults
+     better-defaults
      ;; (git :variables
      ;;      git-gutter-use-fringe t)
-     ;; markdown
-     ;; org
-     ;; syntax-checking
+     markdown
+     org
+     syntax-checking
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
@@ -143,6 +144,13 @@ before layers configuration."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
+  (setq js-indent-level 2) ; js-mode
+  (setq js2-basic-offset 2) ; js2-mode, in latest js2-mode, it's alias of js-indent-level
+  (setq web-mode-markup-indent-offset 2) ; web-mode, html tag in html file
+  (setq web-mode-css-indent-offset 2) ; web-mode, css in html file
+  (setq web-mode-code-indent-offset 2) ; web-mode, js code in html file
+  (setq css-indent-offset 2) ; css-mode
+  (setq web-mode-markup-indent-offset 2)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
