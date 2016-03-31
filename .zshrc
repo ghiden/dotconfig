@@ -97,3 +97,9 @@ alias run-minecraft='java -d64 -jar /Applications/Minecraft.app/Contents/Resourc
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+### load node version specifed by .nvmrc if found
+if [ -e .nvmrc ]
+then
+    nvm use
+fi
