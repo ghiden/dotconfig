@@ -103,3 +103,6 @@ if [ -e .nvmrc ]
 then
     nvm use
 fi
+
+### gulp completion
+eval "$(gulp --completion=zsh)"
