@@ -14,19 +14,20 @@
    '(
      osx
      clojure
-     git
-     html
-     javascript
-     ;; --------------------------------------------------------
-     ;; Example of useful layers you may want to use right away
-     ;; Uncomment a layer name and press C-c C-c to install it
-     ;; --------------------------------------------------------
+     ;;helm-ag
+     ;;web
      auto-completion
      better-defaults
-     ;; (git :variables
-     ;;      git-gutter-use-fringe t)
+     company-mode
+     erlang
+     elixir
+     javascript
+     git
+     html
      markdown
      org
+     colors
+     editorconfig
      syntax-checking
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
@@ -138,6 +139,8 @@ before layers configuration."
    dotspacemacs-default-package-repository nil
    )
   ;; User initialization goes here
+  ;; osx backslash
+  (define-key global-map [?¥] [?\\])
   )
 
 (defun dotspacemacs/config ()
