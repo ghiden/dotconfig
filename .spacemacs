@@ -147,13 +147,21 @@ before layers configuration."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
-  (setq js-indent-level 2) ; js-mode
-  (setq js2-basic-offset 2) ; js2-mode, in latest js2-mode, it's alias of js-indent-level
-  (setq web-mode-markup-indent-offset 2) ; web-mode, html tag in html file
-  (setq web-mode-css-indent-offset 2) ; web-mode, css in html file
-  (setq web-mode-code-indent-offset 2) ; web-mode, js code in html file
-  (setq css-indent-offset 2) ; css-mode
-  (setq web-mode-markup-indent-offset 2)
+  (defun set-indent (n)
+    (setq-default
+     evil-shift-width n
+     tab-width n
+     c-basic-offset n
+     js-indent-level n
+     js2-basic-offset n
+     javascript-indent-level n
+     css-indent-offset n
+     web-mode-markup-indent-offset n
+     web-mode-css-indent-offset n
+     web-mode-code-indent-offset n
+     web-mode-attr-indent-offset n
+     ))
+  (set-indent 2)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
