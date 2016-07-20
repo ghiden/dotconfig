@@ -162,6 +162,8 @@ layers configuration."
      web-mode-attr-indent-offset n
      ))
   (set-indent 2)
+  ;; start figwheel when using cljs-repl
+  (setq cider-cljs-lein-repl "(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))")
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
