@@ -104,5 +104,5 @@ then
     nvm use
 fi
 
-### gulp completion
-eval "$(gulp --completion=zsh)"
+### gulp completion if gulp installed
+type gulp 1>/dev/null && eval "$(gulp --completion=zsh)"
