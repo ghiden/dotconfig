@@ -79,8 +79,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:/usr/local/mysql/lib"
-
 export PATH=$HOME/bin:$HOME/Dropbox/bin:$HOME/gocode/bin:/usr/local/go/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 
 alias ack='ack --type-add js=.coffee --type-add sass=.scss'
@@ -106,3 +104,9 @@ fi
 
 ### gulp completion if gulp installed
 type gulp 1>/dev/null && eval "$(gulp --completion=zsh)"
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/hidenari/src/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/hidenari/src/google-cloud-sdk/completion.zsh.inc'
