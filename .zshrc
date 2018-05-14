@@ -104,9 +104,3 @@ fi
 
 ### gulp completion if gulp installed
 type gulp 1>/dev/null && eval "$(gulp --completion=zsh)"
-
-# The next line updates PATH for the Google Cloud SDK.
-source '/Users/hidenari/src/google-cloud-sdk/path.zsh.inc'
-
-# The next line enables shell command completion for gcloud.
-source '/Users/hidenari/src/google-cloud-sdk/completion.zsh.inc'
