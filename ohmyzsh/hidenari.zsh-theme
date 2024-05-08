@@ -6,7 +6,7 @@ function node_version() {
         echo 'node('`nvm version`')'
 }
 
-PROMPT='%{$fg[yellow]%}%DT%D{%H:%M:%S} $(node_version) %{$fg_bold[red]%}➜  %{$fg_bold[green]%}%~ %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}
+PROMPT='%{$fg[yellow]%}%DT%D{%H:%M:%S} $(node_version) %(?:%{$fg_bold[green]%}%1{➜%} :%{$fg_bold[red]%}%1{➜%} )  %{$fg_bold[green]%}%~ %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}
 $ '
 
 ZSH_THEME_GIT_PROMPT_PREFIX="[%{$fg[red]%}"
